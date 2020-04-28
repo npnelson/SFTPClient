@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3D96450A-3353-4434-8266-AA63916490D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NETToolBox.SFTPClient", "src\NETToolBox.SFTPClient\NETToolBox.SFTPClient.csproj", "{30BFA79F-EA64-427B-9FDC-2652A3EA937E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DB2C7D66-9974-4004-92AF-1A653A448036}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+		nukeeper.yml = nukeeper.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{6EC76AA3-EDA3-465C-A125-6908F12714AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetToolBox.SftpClient.TestHarness", "Utilities\NetToolBox.SftpClient.TestHarness\NetToolBox.SftpClient.TestHarness.csproj", "{A09E863F-F3A9-4AA1-B64A-5D431D916DDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30BFA79F-EA64-427B-9FDC-2652A3EA937E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30BFA79F-EA64-427B-9FDC-2652A3EA937E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30BFA79F-EA64-427B-9FDC-2652A3EA937E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30BFA79F-EA64-427B-9FDC-2652A3EA937E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A09E863F-F3A9-4AA1-B64A-5D431D916DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A09E863F-F3A9-4AA1-B64A-5D431D916DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A09E863F-F3A9-4AA1-B64A-5D431D916DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A09E863F-F3A9-4AA1-B64A-5D431D916DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30BFA79F-EA64-427B-9FDC-2652A3EA937E} = {3D96450A-3353-4434-8266-AA63916490D7}
+		{A09E863F-F3A9-4AA1-B64A-5D431D916DDB} = {6EC76AA3-EDA3-465C-A125-6908F12714AE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AC3054F-09DC-48E3-AA2F-DC9E64876B9C}
+	EndGlobalSection
+EndGlobal

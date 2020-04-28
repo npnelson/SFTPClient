@@ -1,0 +1,19 @@
+trigger: none #don't run as CI Build
+schedules:
+- cron: "0 0 * * *" #run daily at UTC midnight
+  branches:
+     include: [master]
+  always: true #always run, even if no code changes
+resources:
+- repo: self #always point to own repo    
+       
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NuGetAuthenticate@0
+
+- task: NuKeeper@0
+  displayName: Nukeeper 
+  inputs: 
+    arguments: '-a 2d -v d --consolidate -m 99'
