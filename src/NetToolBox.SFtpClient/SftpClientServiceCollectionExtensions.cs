@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
+﻿using Microsoft.Extensions.DependencyInjection.Extensions;
+using NetToolBox.SftpClient;
 
-namespace NetToolBox.SftpClient
+namespace Microsoft.Extensions.DependencyInjection
 {
     public static class SftpClientServiceCollectionExtensions
     {
