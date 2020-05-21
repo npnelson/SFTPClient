@@ -1,4 +1,4 @@
-﻿namespace NETToolBox.SFTPClient
+﻿namespace NetToolBox.SftpClient
 {
     public sealed class SftpSettings
     {

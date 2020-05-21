@@ -2,7 +2,7 @@
 using System.IO;
 using System.Threading.Tasks;
 
-namespace NETToolBox.SFTPClient
+namespace NetToolBox.SftpClient
 {
     public interface ISftpDownloadTransfer
     {
