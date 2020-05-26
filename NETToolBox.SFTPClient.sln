@@ -14,9 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		nukeeper.yml = nukeeper.yml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{6EC76AA3-EDA3-465C-A125-6908F12714AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetToolBox.SftpClient.TestHarness", "Utilities\NetToolBox.SftpClient.TestHarness\NetToolBox.SftpClient.TestHarness.csproj", "{8EA70621-53E6-4303-BC39-7A2A5B01EFAB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetToolBox.SftpClient.TestHarness", "Utilities\NetToolBox.SftpClient.TestHarness\NetToolBox.SftpClient.TestHarness.csproj", "{A09E863F-F3A9-4AA1-B64A-5D431D916DDB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{862EFFE9-9EE1-48ED-84AA-33F8FCD59319}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,17 +28,17 @@ Global
 		{30BFA79F-EA64-427B-9FDC-2652A3EA937E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30BFA79F-EA64-427B-9FDC-2652A3EA937E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30BFA79F-EA64-427B-9FDC-2652A3EA937E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A09E863F-F3A9-4AA1-B64A-5D431D916DDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A09E863F-F3A9-4AA1-B64A-5D431D916DDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A09E863F-F3A9-4AA1-B64A-5D431D916DDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A09E863F-F3A9-4AA1-B64A-5D431D916DDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA70621-53E6-4303-BC39-7A2A5B01EFAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA70621-53E6-4303-BC39-7A2A5B01EFAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA70621-53E6-4303-BC39-7A2A5B01EFAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA70621-53E6-4303-BC39-7A2A5B01EFAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{30BFA79F-EA64-427B-9FDC-2652A3EA937E} = {3D96450A-3353-4434-8266-AA63916490D7}
-		{A09E863F-F3A9-4AA1-B64A-5D431D916DDB} = {6EC76AA3-EDA3-465C-A125-6908F12714AE}
+		{8EA70621-53E6-4303-BC39-7A2A5B01EFAB} = {862EFFE9-9EE1-48ED-84AA-33F8FCD59319}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AC3054F-09DC-48E3-AA2F-DC9E64876B9C}

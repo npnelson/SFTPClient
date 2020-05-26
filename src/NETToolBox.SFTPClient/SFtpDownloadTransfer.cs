@@ -7,10 +7,12 @@ namespace NetToolBox.SftpClient
 {
     public class SFtpDownloadTransfer : ISftpDownloadTransfer
     {
+        private readonly ISftpClientFactory _sftpClientFactory;
         private readonly ILogger<SFtpDownloadTransfer> _logger;
 
-        public SFtpDownloadTransfer(ILogger<SFtpDownloadTransfer> logger)
+        public SFtpDownloadTransfer(ISftpClientFactory sftpClientFactory, ILogger<SFtpDownloadTransfer> logger)
         {
+            _sftpClientFactory = sftpClientFactory;
             _logger = logger;
         }
         /// <summary>
@@ -24,7 +26,7 @@ namespace NetToolBox.SftpClient
         /// <returns></returns>
         public async Task TransferFilesAsync(SftpSettings settings, string sourceDirectory, Func<string, Stream, Task> uploadStream, bool deleteFiles, Func<string, Task>? callBackFunction = null)
         {
-            var client = new SftpClient(settings);
+            var client = _sftpClientFactory.GetSftpClient(settings);
             client.Connect();
             _logger.LogInformation("Connected to {Host}", settings.Host);
             var files = await client.ListDirectoryAsync(sourceDirectory).ConfigureAwait(false);

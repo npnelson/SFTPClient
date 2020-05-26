@@ -11,8 +11,14 @@ namespace NetToolBox.SftpClient
         private readonly Renci.SshNet.SftpClient _internalClient;
         public SftpClient(SftpSettings settings)
         {
+
             _internalClient = new Renci.SshNet.SftpClient(settings.Host, settings.UserName, settings.Password);
+
+
         }
+
+        public string Host { get { return _internalClient.ConnectionInfo.Host; } }
+
         public void Connect()
         {
             _internalClient.Connect();

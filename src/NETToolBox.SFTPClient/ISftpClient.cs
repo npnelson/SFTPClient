@@ -6,6 +6,7 @@ namespace NetToolBox.SftpClient
 {
     public interface ISftpClient
     {
+        string Host { get; }
         void Connect();
         void Disconnect();
         void DeleteFile(string path);
