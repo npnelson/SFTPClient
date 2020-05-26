@@ -9,10 +9,10 @@ namespace NetToolBox.SftpClient
     public sealed class SftpClient : ISftpClient
     {
         private readonly Renci.SshNet.SftpClient _internalClient;
-        public SftpClient(SftpSettings settings)
+        public SftpClient(string host, string userName, string password)
         {
 
-            _internalClient = new Renci.SshNet.SftpClient(settings.Host, settings.UserName, settings.Password);
+            _internalClient = new Renci.SshNet.SftpClient(host, userName, password);
 
 
         }

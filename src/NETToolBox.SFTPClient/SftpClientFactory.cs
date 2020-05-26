@@ -2,9 +2,9 @@
 {
     public sealed class SftpClientFactory : ISftpClientFactory
     {
-        public ISftpClient GetSftpClient(SftpSettings settings)
+        public ISftpClient GetSftpClient(string host, string userName, string password)
         {
-            return new SftpClient(settings);
+            return new SftpClient(host, userName, password);
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddSftpClient(this IServiceCollection services)
         {
             services.TryAddSingleton<ISftpClientFactory, SftpClientFactory>();
-            services.TryAddSingleton<ISftpDownloadTransfer, SFtpDownloadTransfer>();
+            //  services.TryAddSingleton<ISftpDownloadTransfer, SFtpDownloadTransfer>();
             return services;
         }
     }

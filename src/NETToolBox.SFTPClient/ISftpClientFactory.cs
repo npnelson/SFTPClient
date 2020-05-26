@@ -2,6 +2,6 @@
 {
     public interface ISftpClientFactory
     {
-        public ISftpClient GetSftpClient(SftpSettings settings);
+        public ISftpClient GetSftpClient(string host, string userName, string password);
     }
 }
